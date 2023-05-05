@@ -1,234 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Bootcamp</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand fw-bold text-danger">NexGen Frontend Bootcamp</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-items">
-                        <a href="#learn" class="nav-link">What You'll Learn</a>
-                    </li>
-                    <li class="nav-items">
-                        <a href="#questions" class="nav-link">FAQs</a>
-                    </li>
-                    <li class="nav-items">
-                        <a href="#instructors" class="nav-link">Instructors</a>
-                    </li>                
-                </ul>        
-            </div>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand fw-bold text-danger">
+        <img style="max-width: 15%;" src="data:image/png;base64,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" alt=""> Front-End Bootcamp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-items">
+              <a href="#learn" class="nav-link">What You'll Learn</a>
+            </li>
+            <li class="nav-items">
+              <a href="#questions" class="nav-link">Questions</a>
+            </li>
+            <li class="nav-items">
+              <a href="#instructors" class="nav-link">Instructors</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Showcase -->
-    <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
-        <div class="container">
-            <div class="d-sm-flex justify-content-between align-text-center pt-5 py-2">
-                <div>
-                    <h1 class="fw-bold py-2">Become a <span class="text-secondary">Web-Developer</span></h1>
-                    <p class="lead-my-3 py-2">A comprehensive training program designed to provide individuals with the skills and knowledge necessary to enter the world of web development covering range of topics, including HTML, CSS, JavaScript, React. The curriculum is hands-on, project-based, and taught by experienced web developers. Participants will gain practical experience by building real-world websites and applications.
-                    </p>
-                    <button class="btn btn-info btn-lg">Start Enrollment</button>
-                </div>
-                <img class="img-fluid w-75 d-none d-sm-block" src="https://i.pinimg.com/originals/b8/b7/fa/b8b7faa068cb612f21a7f7268313064b.png " alt="Web-Developer"> 
-            </div>
+    <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start ">
+      <div class="container">
+        <div class="d-sm-flex align-text-center justify-content-between pt-5">
+          <div>
+            <h1 class="fw-bold py-2">Become a <span class="text-secondary">Web-Developer</span></h1>
+            <p class="lead-my-4 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, id! Odit minima qui est earum voluptas fugiat ullam animi recusandae distinctio aliquam incidunt, perspiciatis ipsam, dicta, rem quidem quam nemo tenetur? Reiciendis facere maxime cupiditate.
+            </p>
+            <button class="btn btn-info btn-lg">Start Enrollment</button>
+          </div>
+          <img class="img-fluid w-50 d-none d-sm-block" src="https://i.pinimg.com/originals/b8/b7/fa/b8b7faa068cb612f21a7f7268313064b.png " alt="Web-Developer"> 
         </div>
+      </div>
     </section>
 
     <!-- Newsletter -->
     <section class="bg-secondary text-light p-5">
-        <div class="container">
-            <div class="d-sm-flex align-text-center justify-content-between">
-                <h3 class="mb-2 mb-md-0 fw-bold">Sign Up For Our Newsletter</h3>
-                <div class="input-group news-letter">
-                    <input type="text"class="form-control" placeholder="Enter Your email ID">
-                    <button class="btn btn-info btn-lg" type="button">Enter</button>
-                </div>
-            </div>
+      <div class="container">
+        <div class="d-flex align-text-center justify-content-between">
+          <h3 class="mb-3 mb-md-0 fw-bold">Sign Up For Our Newsletter</h3>
+          <div class="input-group news-letter">
+            <input type="text"class="form-control" placeholder="Enter Your email ID">
+            <button class="btn btn-info btn-lg" type="button">Enter</button>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Cards -->
     <section class="p-5">
-        <div class="container">
-            <div class="row text-center g-4">
-                <!-- Card-1 -->
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-laptop"></i> 
-                            </div>
-                            <h3 class="card-title-mb-3">
-                                Virtual
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima corrupti unde mollitia eligendi quidem?
-                            </p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row text-center g-4">
+          <!-- Card-1 -->
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i> 
                 </div>
-                <!-- Card-2 -->
-                <div class="col-md">
-                    <div class="card bg-primary text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-person-square"></i> 
-                            </div>
-                            <h3 class="card-title-mb-3">
-                                Hybrid
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima corrupti unde mollitia eligendi quidem?
-                            </p>
-                            <a href="#" class="btn btn-dark">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card-3 -->
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-people"></i> 
-                            </div>
-                            <h3 class="card-title-mb-3">
-                                In-person
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima corrupti unde mollitia eligendi quidem?
-                            </p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>                
-            </div>            
-        </div>
-    </section>
-
-    <!-- Learn sections  -->
-    <section id="learn" class="p-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md">
-                    <img src="https://raw.githubusercontent.com/bradtraversy/bootstrap-bootcamp-website/7656406f5e7b5cb1ac5879df8fd93f1182e215bf/img/fundamentals.svg" class="img-fluid" alt="">
-                </div>
-                <div class="col-md p-5">
-                    <h2>Learn the Fundamentals</h2>
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci sint, dignissimos reiciendis molestias eius deleniti.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dignissimos blanditiis vitae a quasi in reiciendis labore id at officia quibusdam ratione magnam dolor odit eius cupiditate est, vero animi!
-                    </p>
-                    <a href="#" class="btn btn-dark mt-3">
-                        <i class="bi bi-chevron-right"></i>Read More
-                    </a>
-                </div>            
+                <h3 class="card-title-mb-3">
+                  Virtual
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima corrupti unde mollitia eligendi quidem?
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
             </div>
+          </div>
+          <!-- Card-2 -->
+          <div class="col-md">
+            <div class="card bg-primary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i> 
+                </div>
+                <h3 class="card-title-mb-3">
+                  Hybrid
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima corrupti unde mollitia eligendi quidem?
+                </p>
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card-3 -->
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i> 
+                </div>
+                <h3 class="card-title-mb-3">
+                  In-person
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima corrupti unde mollitia eligendi quidem?
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     
-    <section id="learn" class="p-5 bg-dark text-light">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">                
-                <div class="col-md p-5">
-                    <h2>React Framework</h2>
-                    <p class="lead">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga soluta inventore exercitationem dolor voluptatibus cum tempora eveniet quia?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum, perferendis odio nam minima sed officiis itaque? Temporibus delectus officiis illum odio quibusdam?
-                    </p>
-                    <a href="#" class="btn btn-light mt-3">
-                        <i class="bi bi-chevron-right"></i>Read More
-                    </a>
-                </div>  
-                <div class="col-md">
-                    <img src="https://raw.githubusercontent.com/bradtraversy/bootstrap-bootcamp-website/7656406f5e7b5cb1ac5879df8fd93f1182e215bf/img/react.svg" class="img-fluid" alt="">
-                </div>          
-            </div>
+    <!-- Learn sections  -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="https://raw.githubusercontent.com/bradtraversy/bootstrap-bootcamp-website/7656406f5e7b5cb1ac5879df8fd93f1182e215bf/img/fundamentals.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md p-5">
+            <h2>Learn the Fundamentals</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci sint, dignissimos reiciendis molestias eius deleniti.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dignissimos blanditiis vitae a quasi in reiciendis labore id at officia quibusdam ratione magnam dolor odit eius cupiditate est, vero animi!
+            </p>
+            <a href="#" class="btn btn-dark mt-3">
+            <i class="bi bi-chevron-right"></i>Read More
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>React Framework</h2>
+            <p class="lead">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga soluta inventore exercitationem dolor voluptatibus cum tempora eveniet quia?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum, perferendis odio nam minima sed officiis itaque? Temporibus delectus officiis illum odio quibusdam?
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+            <i class="bi bi-chevron-right"></i>Read More
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="https://raw.githubusercontent.com/bradtraversy/bootstrap-bootcamp-website/7656406f5e7b5cb1ac5879df8fd93f1182e215bf/img/react.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ Accordions -->
     <section id="questions" class="p-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
-            <div class="accordion py-2" id="questions">
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne">
-                    What technical requirement is needed for this course?
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <ul>
-                            <li>A reliable computer either Mac or PC is required, with a minimum 8GB of RAM and a dual-core processor and a stable internet connection.  </li>
-                        </ul>       
-                    </div>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo">
-                    What is the eligibility criteria?
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <ul>
-                            <li>Graduation in any stream and desire to learn.</li>
-                            <li>Language & Computer Literacy.</li> 
-                            <li>No previous coding experience is necessary.</li>
-                        </ul>                       
-                    </div>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree">
-                    What sets your program apart from other bootcamp programs?
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body">
-                        <ul>
-                            <li>Our unique program was designed for working adults, students and busy professionals, giving participants the advantage of flexibility.</li>
-                            <li>Our curriculum is built based on in-demand technologies needed for the competitive web development industry.</li>
-                            <li>Participants benefit from professional development coursework to prepare them for success as they work to advance or change careers.</li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
+      <div class="container">
+        <h2 class="text-center mb-4">FAQs</h2>
+        <div class="accordion" id="questions">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne">
+              Where are you located?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, veritatis asperiores enim dolorum itaque perferendis id laborum, neque libero voluptate corrupti unde saepe minus nisi quibusdam?
+              </div>
             </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo">
+              What is the fee structure?!
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maxime culpa reiciendis optio ipsam molestiae nam, voluptate sint accusamus recusandae repudiandae dolorem!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree">
+              Does this course need any prerequisite?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quas distinctio magnam saepe facilis qui est debitis, harum necessitatibus ea provident, inventore assumenda vel! Doloremque, porro ducimus!
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="p-3 bg-dark text-light text-center position-relative">
-        <div class="container">
-            &copyDesigned by Aman Jain | &copy2022 <br>
-            <a href="https://github.com/amanjainssm">GitHub</a> <br>
-            <a href="https://www.linkedin.com/in/amanjainssm">LinkedIn</a>
-        </div>
-    </footer>  
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <!-- Footer -->
+    <footer class="p-4 bg-dark text-light text-center position-relative">
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div class="col-auto">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/amanjainssm/" class="link-custom" target="_blank"><i class="lab la-linkedin icon"></i> LinkedIn | </a></li>
+              <li class="list-inline-item"><a href="mailto:amanjainssm@gmail.com" class="link-custom" target="_blank"><i class="las la-envelope icon"></i> Mail | </a></li>
+              <li class="list-inline-item"><a href="https://codepen.io/amanjainssm/" class="link-custom" target="_blank"><i class="lab la-codepen icon"></i> Codepen | </a></li>
+              <li class="list-inline-item"><a href="https://github.com/amanjainssm/" class="link-custom" target="_blank"><i class="lab la-github icon"></i> GitHub </a></li>
+            </ul>
+          </div>
+          <div class="col-auto">
+            <p class="mb-0"> &copy 2022 | Designed by <span class="fw-bold">Aman G Jain</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
 </html>
