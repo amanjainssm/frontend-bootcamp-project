@@ -7,13 +7,14 @@
     <title>Frontend Bootcamp</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   </head>
   <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div class="container">
-        <a href="#" class="navbar-brand fw-bold text-danger"> Front-End Bootcamp</a>
+        <a href="#" class="navbar-brand fw-bold text-danger"> Frontend Bootcamp</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,16 +35,16 @@
     </nav>
 
     <!-- Showcase -->
-    <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start ">
+    <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
       <div class="container">
-        <div class="d-sm-flex align-text-center justify-content-between">
+        <div class="d-sm-flex justify-content-between align-items-center py-2">
           <div>
             <h1 class="fw-bold">Become a <span class="text-secondary">Web-Developer</span></h1>
-            <p class="lead-my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, fugit non nobis saepe sapiente at ratione, molestiae impedit in fugiat magni id accusamus, laborum aut repellendus neque sint quae atque quo. Rem labore a quidem! Magni vero facere, harum officiis ab tempore rem nihil dolorem.
+            <p class="lead-my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit nobipsum dolor sit amet consectetur adipisicing elit. Adipisci at libero quos? saepe sapiente at ratione, molestiae impedit in fugiat magni id accusamus, laborum aut repellendus neque sint quae atque quo. Rem labore a quidem! Magni vero facere, harum officiis ab tempore rem nihil dolorem.
             </p>
-            <button class="btn btn-info btn-lg">Start Enrollment</button>
+            <button class="btn btn-info btn-lg mb-0 px-4 fw-medium">Enroll</button>            
           </div>
-          <img class="img-fluid w-50 d-none d-sm-block" src="https://i.pinimg.com/originals/b8/b7/fa/b8b7faa068cb612f21a7f7268313064b.png " alt="Web-Developer"> 
+          <img class="img-fluid w-50 d-none d-sm-block" src="images/showcase.svg" alt="Web-Developer">
         </div>
       </div>
     </section>
@@ -55,7 +56,7 @@
           <h3 class="mb-3 mb-md-0 fw-bold">Sign Up For Our Newsletter</h3>
           <div class="input-group news-letter">
             <input type="text"class="form-control" placeholder="Enter Your email ID">
-            <button class="btn btn-info btn-lg" type="button">Enter</button>
+            <button class="btn btn-info btn-lg fw-medium" type="button">Enter</button>
           </div>
         </div>
       </div>
@@ -67,16 +68,14 @@
         <div class="row text-center g-4">
           <!-- Card-1 -->
           <div class="col-md">
-            <div class="card bg-dark text-light">
+            <div class="card bg-dark text-light rounded-4">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="bi bi-laptop"></i> 
                 </div>
-                <h3 class="card-title-mb-3">
-                  Virtual
-                </h3>
+                <h3 class="card-title-mb-3">Virtual</h3>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima corrupti unde mollitia eligendi quidem?
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, officiis. Nobis iste soluta ipsum minus Nobis iste soluta ipsum minustenetur officiis nisi sunt repellendus.
                 </p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
@@ -84,16 +83,14 @@
           </div>
           <!-- Card-2 -->
           <div class="col-md">
-            <div class="card bg-primary text-light">
+            <div class="card bg-primary text-light rounded-4">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="bi bi-person-square"></i> 
                 </div>
-                <h3 class="card-title-mb-3">
-                  Hybrid
-                </h3>
+                <h3 class="card-title-mb-3">Hybrid</h3>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima corrupti unde mollitia eligendi quidem?
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, officiis. Nobis iste soluta ipsum minus Nobis iste soluta ipsum minus tenetur officiis nisi sunt repellendus.
                 </p>
                 <a href="#" class="btn btn-dark">Read More</a>
               </div>
@@ -101,16 +98,14 @@
           </div>
           <!-- Card-3 -->
           <div class="col-md">
-            <div class="card bg-dark text-light">
+            <div class="card bg-dark text-light rounded-4">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="bi bi-people"></i> 
                 </div>
-                <h3 class="card-title-mb-3">
-                  In-person
-                </h3>
+                <h3 class="card-title-mb-3">In-person</h3>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima corrupti unde mollitia eligendi quidem?
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, officiis. Nobis iste soluta ipsum minus Nobis iste soluta ipsum minustenetur officiis nisi sunt repellendus.
                 </p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
@@ -125,10 +120,10 @@
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md">
-            <img src="https://raw.githubusercontent.com/bradtraversy/bootstrap-bootcamp-website/7656406f5e7b5cb1ac5879df8fd93f1182e215bf/img/fundamentals.svg" class="img-fluid" alt="">
+            <img src="images/fundamentals.svg" class="img-fluid" alt="">
           </div>
-          <div class="col-md p-5">
-            <h2>Learn the Fundamentals</h2>
+          <div class="col-md">
+            <h2 class="fw-bold">Learn the Fundamentals</h2>
             <p class="lead">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci sint, dignissimos reiciendis molestias eius deleniti.
             </p>
@@ -145,8 +140,8 @@
     <section id="learn" class="p-5 bg-dark text-light">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-md p-5">
-            <h2>React Framework</h2>
+          <div class="col-md">
+            <h2 class="fw-bold">React Framework</h2>
             <p class="lead">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga soluta inventore exercitationem dolor voluptatibus cum tempora eveniet quia?
             </p>
@@ -158,7 +153,7 @@
             </a>
           </div>
           <div class="col-md">
-            <img src="https://raw.githubusercontent.com/bradtraversy/bootstrap-bootcamp-website/7656406f5e7b5cb1ac5879df8fd93f1182e215bf/img/react.svg" class="img-fluid" alt="">
+            <img src="images/react.svg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -208,6 +203,102 @@
         </div>
       </div>
     </section>
+
+    <!-- Instructors -->
+    <section id="instructors" class="p-5 bg-dark-subtle">
+      <div class="container">
+        <h2 class="text-center text-dark">Our Instructors</h2>
+        <p class="lead text-center text-dark mb-5">
+          Our instructors all have 8+ years working as a web developer in the
+          industry.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light rounded-4">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/10.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">John Parnell</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light rounded-4">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/24.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Evanka Doe</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light rounded-4">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/13.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Steve Gareth</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light rounded-4">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/17.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Sara Fui</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section
     
     <!-- Footer -->
     <footer class="p-4 bg-dark text-light text-center position-relative">
@@ -217,7 +308,6 @@
             <ul class="list-inline">
               <li class="list-inline-item"><a href="https://www.linkedin.com/in/amanjainssm/" class="link-custom" target="_blank"><i class="lab la-linkedin icon"></i> LinkedIn | </a></li>
               <li class="list-inline-item"><a href="mailto:amanjainssm@gmail.com" class="link-custom" target="_blank"><i class="las la-envelope icon"></i> Mail | </a></li>
-              <li class="list-inline-item"><a href="https://codepen.io/amanjainssm/" class="link-custom" target="_blank"><i class="lab la-codepen icon"></i> Codepen | </a></li>
               <li class="list-inline-item"><a href="https://github.com/amanjainssm/" class="link-custom" target="_blank"><i class="lab la-github icon"></i> GitHub </a></li>
             </ul>
           </div>
